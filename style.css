@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* CSS start */
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background-color:#575757 ;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    float: left;
+}
+
+.user{
+    height: 20%;
+    background-color:#575757 ;
+    color: white;
+    padding: 15px 15px 0px 15px;
+}
+
+.user h2{
+    font-size: 32px;
+    margin: 30px 0 30px 0;
+}
+
+.menu{
+    padding: 20px 0px 15px 0px;
+    background-color: #000;
+    float: left;
+    overflow-y: auto;
+    height: 570px;
+}
+
+.menu h2{
+    font-size: 32px;
+    padding-left: 15px;
+    color: white;
+}
+
+.menu ul{
+    margin-top: 20px;
+}
+
+/* 滾輪樣式 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-button {
+    background: transparent;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(136, 132, 132);
+    /* border: 1px solid slategrey; */
+
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: transparent;
+}
+/* 滾輪樣式 */
+
+.select{
+    display: block;
+    font-size: 20px;
+    color: white;
+    padding: 15px 0 15px 20px;
+    cursor: pointer;
+}
+.active{
+    background-color:#575757;
+}
+
+.comment{
+    background-color: #575757;
+    margin-left: 300px;
+    padding: 15px;
+}
+
+.comment h2{
+    font-size: 32px;
+    color: white;
+    margin: 30px 0 30px 10px;
+}
+
+.data{
+    margin-left: 5px;
+    background-color: #fff;
+    padding: 20px 15px 15px 15px ;
+    overflow-y: auto;
+    height: 570px;
+    overflow-x: hidden;
+}
+
+.comment-item {
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 30px 15px;
+    
+}
+
+.content{
+    display: flex;
+    width: 90%;
+}
+
+.content h3{
+    font-weight:bold;
+    width: 10%;
+}
+
+.content p{
+    width: 90%;
+    word-wrap:break-word;
+    overflow-x: wrap;
+}
+
+.delete{
+    width: 9%;
+}
+
+.delete a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #fff;
+    font-size: 20px;
+    color: #cf6464;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.delete a:hover{
+    text-decoration: none;
+    display: block;
+    background-color: #cf6464;
+    font-size: 20px;
+    color: #fff;
+}
+
